@@ -1,0 +1,66 @@
+{
+  "author": "Girma Nigusse <xgirma@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/e2e-boilerplate/selenium-webdriver-es-modules-babel-mocha-chai-expect/issues"
+  },
+  "dependencies": {
+    "chai": "4.2.0",
+    "chromedriver": "80.0.2",
+    "mocha": "7.1.1",
+    "selenium-webdriver": "4.0.0-alpha.7",
+    "webdriver-manager": "12.1.7"
+  },
+  "description": "Selenium-WebDriver end-to-end test automation boilerplate. Using ES Modules, Babel, Mocha, Chai and Expect.",
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/plugin-transform-runtime": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@babel/register": "7.9.0",
+    "@babel/runtime": "7.9.2",
+    "babel-jest": "25.2.6",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "4.2.3",
+    "prettier": "2.0.3",
+    "pretty-quick": "2.0.1"
+  },
+  "homepage": "https://github.com/e2e-boilerplate/selenium-webdriver-es-modules-babel-mocha-chai-expect#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "keywords": [
+    "babel",
+    "boilerplate",
+    "chai",
+    "e2e",
+    "e2e tests",
+    "example",
+    "expect",
+    "integration test",
+    "mocha",
+    "selenium",
+    "selenium-webdriver"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "name": "selenium-webdriver-es-modules-babel-mocha-chai-expect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2e-boilerplate/selenium-webdriver-es-modules-babel-mocha-chai-expect.git"
+  },
+  "scripts": {
+    "lint": "npx eslint --ext .js ./ --fix",
+    "test": "./node_modules/.bin/mocha --require @babel/register spec/*.spec.js"
+  },
+  "version": "1.0.0"
+}
