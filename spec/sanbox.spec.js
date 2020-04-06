@@ -3,7 +3,7 @@ import chrome from "selenium-webdriver/chrome";
 
 import "chromedriver";
 
-const { expect } = require("chai");
+const { assert } = require("chai");
 
 const options = new chrome.Options();
 const chromeOptions = process.env.GITHUB_ACTIONS ? options.headless() : options;
@@ -25,9 +25,9 @@ describe("Sandbox", () => {
 
   it("should be on Sandbox", async () => {
     const title = await browser.getTitle();
-    const header = await browser.findElement(By.css("h1"));
+    assert.strictEqual(title, "Sandbox");
 
-    expect(title).to.equal("Sandbox");
-    expect(await header.getText()).to.equal("Sandbox");
+    const header = await browser.findElement(By.css("h1")).getText();
+    assert.strictEqual(header, "Sandbox");
   });
 });
