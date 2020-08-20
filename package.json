@@ -13,7 +13,7 @@
   "description": "Selenium-WebDriver end-to-end test automation boilerplate. Using ES Modules, Babel, Mocha, Chai and Assert.",
   "devDependencies": {
     "@babel/cli": "7.10.5",
-    "@babel/core": "7.11.1",
+    "@babel/core": "7.11.4",
     "@babel/plugin-transform-runtime": "7.11.0",
     "@babel/preset-env": "7.11.0",
     "@babel/register": "7.10.5",
